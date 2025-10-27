@@ -11,6 +11,7 @@ pro get_fl20021005_a1
   ; 29-Mar-2022 IGH
   ; 01-Apr-2022 IGH Manually produce per det
   ; 26-Oct-2025 IGH Need to set sum_flag=1 even though sep det due to sunkit-spex "bug"
+  ; 27-Oct-2025 IGH Make sure everything is rate as that has been tested with sunkit-spex
   ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   ; Need the following line if don't already have the original data
@@ -28,7 +29,7 @@ pro get_fl20021005_a1
   eres = 1 / 3.
   ebins = 3. + findgen(97 / eres + 1) * eres
   ; Units
-  units = 'flux'
+  units = 'rate'
   ; -----
   ; -----
   ; Do the Summed version
